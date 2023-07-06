@@ -44,7 +44,7 @@ while01: nop
         pop eax
         ;if cont < value goto while01
         cmp cont, eax
-        jg endw01
+        jge endw01
         jmp while01
 endw01: nop 
 
