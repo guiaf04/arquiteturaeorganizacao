@@ -1,9 +1,10 @@
+; Correção: 0,5
         .686
         .model flat, c
         .stack 100h
 printf  PROTO arg1:ptr byte, printlist:vararg        
         .data
-vet     sdword 10, 4, 5, 3, 2, 7, 8, 9, 6, 24, 0, 54, 22, 1
+vet     sdword 1, 20, 3, 40, 5, 60, 7, 80, 9, 10, 0, 54, 22, 1
 i       sdword 0
 j       sdword 0     
 n       sdword ?  

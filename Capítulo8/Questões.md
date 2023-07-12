@@ -2,6 +2,8 @@
 
 ## Questão 1: Given the following assembly language statements, indicate whether they are syntactically correct or incorrect. If incorrect, indicate what is wrong with the statement
 
+> Correçã0: 0,5
+
 * A. Resposta: Correto.
 
     ```asm
@@ -41,6 +43,8 @@
 ---
 
 ## Questão 2: Given the contents of the following memory location, what is stored in the eax register at the end of each segment?
+
+> Correçã0: 0,5
 
 * A. Resposta: 5
 
@@ -101,6 +105,8 @@
 
 ## Questão 3: Implement the following C instructions using assembly language. Assume all variables are declared as sdword
 
+> Correçã0: 0,5
+
 * A. num[0] = 1;
 
     ```asm
@@ -146,6 +152,8 @@
 ---
 
 ## Questão 4: Given the declarations below, indicate what would be stored in the eax register for each of the following instructions. Note that oarray is of type sword, not sdword (hint: see Chap. 1)
+
+> Correçã0: 0,5
 
 ```c
     narray sdword 1,2,3,4,5
