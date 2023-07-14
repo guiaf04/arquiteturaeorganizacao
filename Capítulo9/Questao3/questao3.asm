@@ -1,10 +1,11 @@
+; Correção: 1,0
         .686
         .model flat, c
         .stack 100h
 printf   PROTO   arg1:Ptr Byte, printlist:VARARG
 scanf    PROTO   arg2:Ptr Byte, inputlist:VARARG
         .data
-arraystr     byte "aaabbbbaaa", "1111111111", "kinikkinik", "hhhhhdddda", "nknfkdhkdj", "abakhwetha", "5555555555", "1234554321", "palindrome", "zythepsary"
+arraystr     byte "aaacbbbaaa", "1111111111", "kinikkinik", "hhhhhdddda", "nknfkdhkdj", "abakhwetha", "5555555555", "1234554321", "palindrome", "zythepsary"
 n       sdword 10
 cont    sdword 0
 tempecx sdword ?

@@ -2,6 +2,8 @@
 
 ## Questão 1:  Given the following assembly language statements, indicate whether they are syntactically correct or incorrect. If incorrect, indicate what is wrong with the statement
 
+> Correção: 0,3. A instrução _stosb_ existe. 
+
 * A. Resposta: Incorreto, o corrreto seria movsb e não movesb
 
     ```asm
@@ -41,6 +43,8 @@
 ---
 
 ## Questão 2: Given the following declarations, walk through the following code segments and indicate the contents of the ecx, esi, edi, and al registers upon completion of each segment. You may assume that string1 starts at memory location 100 and string2 at memory location 105. With problem D, in addition to the registers, what would be the contents of string2?
+
+> Correção: 0,5
 
 >string1 byte "abcde" <br>
 >string2 byte "abcyz"
