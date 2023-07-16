@@ -1,3 +1,4 @@
+; Correção: 0,0. Acho que vocês pegaram o exemplo errado para alterar.
         .686 
         .model flat,c 
         .stack 100h 
