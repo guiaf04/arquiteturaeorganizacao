@@ -385,3 +385,7 @@ endif01: nop
 ## Questão 8: Change the complete program in Sect. 10.10 to instead prompt for and input the five numbers
 
 * Resposta: Código à Parte
+
+## Questão 9:
+
+> Correção: 0,0
