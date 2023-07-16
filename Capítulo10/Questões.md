@@ -213,7 +213,9 @@ end
 
 ---
 
-## Questao 4: Given the code using inline assembly in Sect. 10.7.4, rewrite it to work with float and long double types (Hint: For type float, see Sect. 10.7.1)
+## Questao 5: Given the code using inline assembly in Sect. 10.7.4, rewrite it to work with float and long double types (Hint: For type float, see Sect. 10.7.1)
+
+> Correção: 0,5
 
 ### Code
 
