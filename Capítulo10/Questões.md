@@ -169,7 +169,9 @@ Resposta:
 
 ---
 
-## Questão 3: Write the equivalent assembly language code segment for the C program in Sect. 10.7.3 (which uses type long double)
+## Questão 4: Write the equivalent assembly language code segment for the C program in Sect. 10.7.3 (which uses type long double)
+
+> Correção: 0,5
 
 ### Code
 
