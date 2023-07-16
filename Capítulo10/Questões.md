@@ -283,7 +283,9 @@ int main() {
 
 ---
 
-## Questão 5: Alter the if-then code segment at the begining of Sect. 10.8 to implement an if-then-else structure to output the message “x is less than or equal to y” in the else section
+## Questão 6: Alter the if-then code segment at the begining of Sect. 10.8 to implement an if-then-else structure to output the message “x is less than or equal to y” in the else section
+
+> Correção: 0,5
 
 ### Code
 
