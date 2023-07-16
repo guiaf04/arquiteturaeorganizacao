@@ -2,6 +2,8 @@
 
 ## Questão 1: Given the following variables, what are the results in the variable z for each of the following code segments?
 
+> Correção: 0,5
+
 ```asm
     w real8 2.0 
     x real8 5.5
@@ -85,6 +87,8 @@ Resposta:
 ---
 
 ## Questao 2: Convert the following C-like arithmetic instructions into post-fix form and then write the corresponding assembly language instructions. Assume that all variables are of type real8
+
+> Correção: 0,5
 
 * a. answer = x – y + z;
 
