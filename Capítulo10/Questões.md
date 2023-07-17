@@ -323,6 +323,8 @@ endif01:    nop
 
 ## Questão 7: Alter the if-then-else-if code segment in Sect. 10.8 to add an else section to the nested if statement to output the message “x and y are equal”
 
+> Correção: 0,5
+
 ### Code
 
 ```asm
