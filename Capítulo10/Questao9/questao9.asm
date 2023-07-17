@@ -1,4 +1,4 @@
- ; Correção: 0,3. O programa original não limita o número de números lidos a n. E vocês ainda usaram 
+ ; Correção: 0,5.
  ; o que seria um laço for, o .repeat-untilcxz. 
         .686
         .model flat, c
