@@ -1,53 +1,56 @@
- ; Correção: 0,3. O programa original não limita o número de números lidos a n. E vocês ainda usaram 
- ; o que seria um laço for, o .repeat-untilcxz. 
-        .686
-        .model flat, c
-        .stack 100h
-printf  PROTO arg1:Ptr Byte, printlist:VARARG
-scanf   PROTO arg1:Ptr Byte, inputlist:VARARG
-        .data
-msg1fmt byte 0Ah,"%s",0Ah,0Ah,0
-msg2fmt byte " %3.1f",0Ah,0
-msg3fmt byte "%lf",0
-msg1    byte "Array",0
-msg2    byte "Input a float number: ", 0        
-n       sdword 5
-array   real8 5 dup(?)
-aux     real8 ?
-        .code
-main    proc
+; Correção: 0,0. Acho que vocês pegaram o exemplo errado para alterar.
+        .686 
+        .model flat,c 
+        .stack 100h 
+printf PROTO arg1:Ptr Byte, printlist:VARARG 
+scanf PROTO arg2:Ptr Byte, inputlist:VARARG 
 
-        mov ecx, n
-        mov ebx,0
+        .data 
+in1fmt  byte "%lf",0 
+in2fmt  byte "%d",0
+msg0fmt byte 0Ah,"%s",0 
+msg1fmt byte 0Ah,"%s%6.1f",0Ah,0 
+msg0    byte "Enter a double for x: ",0 
+msg1    byte "The sum is: ",0 
+msg2    byte "enter the number of elements for the sum: ",0
 
-        .repeat
-        push ecx
-        INVOKE printf, ADDR msg1fmt, ADDR msg2
-        INVOKE scanf, ADDR msg3fmt, ADDR array[ebx]
-        add ebx, 8
-        pop ecx
-        .untilcxz
+x       real8 ? 
+sum     real8 ? 
+zero    real8 0.0 
+value   sdword ?
+cont    sdword 0
 
-        INVOKE printf, ADDR msg1fmt, ADDR msg1
-        lea esi,array
-        mov ecx,n
-        .repeat
-        push ecx
-        INVOKE printf, ADDR msg2fmt, real8 ptr [esi]
-        pop ecx
-        add esi,8
-        .untilcxz
+        .code 
+main    proc 
+        ;sum = 0.0 
+        fld zero 
+        fstp sum 
+        INVOKE printf, ADDR msg0fmt, ADDR msg2 
+        INVOKE scanf, ADDR in2fmt, ADDR value 
+        mov eax, value
+        ;while cont < value 
+while01: nop
+        
+        push eax
+        INVOKE printf, ADDR msg0fmt, ADDR msg0 
+        INVOKE scanf, ADDR in1fmt, ADDR x 
 
-        INVOKE printf, ADDR msg1fmt, ADDR msg1
-        mov ebx,0
-        mov ecx,n
-        .repeat
-        push ecx
-        INVOKE printf, ADDR msg2fmt, array[ebx]
-        pop ecx
-        add ebx,8
-        .untilcxz
+        ;sum = sum + x 
+        fld sum 
+        fadd x 
+        fstp sum 
+        
+        ;cont = cont + 1
+        inc cont
+        pop eax
+        ;if cont < value goto while01
+        cmp cont, eax
+        jge endw01
+        jmp while01
+endw01: nop 
+
+        INVOKE printf, ADDR msg1fmt, ADDR msg1, sum 
 
         ret 
-main    endp
-        end
+main    endp 
+        end 

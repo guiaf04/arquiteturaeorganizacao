@@ -321,7 +321,7 @@ endif01:    nop
 
 ---
 
-## Questão 6: Alter the if-then-else-if code segment in Sect. 10.8 to add an else section to the nested if statement to output the message “x and y are equal”
+## Questão 7: Alter the if-then-else-if code segment in Sect. 10.8 to add an else section to the nested if statement to output the message “x and y are equal”
 
 ### Code
 
@@ -372,7 +372,7 @@ endif01: nop
 
 ---
 
-## Questão 7: Change the complete program in Sect. 10.9 to implement a do-while structure (post-test loop) instead of while structure (pre-test loop). Make sure that it works properly for 0.0 and negative numbers
+## Questão 8: Change the complete program in Sect. 10.9 to implement a do-while structure (post-test loop) instead of while structure (pre-test loop). Make sure that it works properly for 0.0 and negative numbers
 
 ---
 
@@ -382,10 +382,6 @@ endif01: nop
 
 <br>
 
-## Questão 8: Change the complete program in Sect. 10.10 to instead prompt for and input the five numbers
+## Questão 9: Change the complete program in Sect. 10.10 to instead prompt for and input the five numbers
 
 * Resposta: Código à Parte
-
-## Questão 9:
-
-> Correção: 0,0
